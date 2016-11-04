@@ -10,3 +10,6 @@
 
 # Deliverables
 # Make sure the new page is uploaded to your GitHub account.
+print("i should start my homework")
+print("start with homework 2 part C")
+print("use the string matching from homework1")
