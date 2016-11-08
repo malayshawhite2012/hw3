@@ -10,7 +10,11 @@
 
 # Deliverables
 # Make sure the new page is uploaded to your GitHub account.
-#
 print("i should start my homework")
 print("start with homework 2 part C")
 print("use the string matching from homework1")
+
+f = open('hw3bshw3.html', 'w')
+for line in f:
+	if line.find('student')!= -1:
+		line.replace('student', 'AMAZING student')
