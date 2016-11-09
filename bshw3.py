@@ -19,9 +19,10 @@ f2 = open('hw3.html', "w")
 for line in f:
 	if line.find('student')!= -1:
 		f2.write(line.replace('student', 'AMAZING student'))
-	if line.find('iframe') != -1:
-		
-		f2.write(line.replace('https://www.youtube.com/embed/mimp_3gquc4?feature=oembed', 'Screen\ Shot\ 2016-10-04\ at\ 11.35.13\ PM.png'))
+	elif line.find('iframe') != -1:
+		f2.write(line.replace('https://www.youtube.com/embed/mimp_3gquc4?feature=oembed', 'picofme.png'))
+	elif line.find("/sites/default/themes/umsi/imgs/logo_footer.png") != -1:
+		f2.write(line.replace("/sites/default/themes/umsi/imgs/logo_footer.png" , 'media/logo.png'))
 	else:
 		f2.write(line)
 
