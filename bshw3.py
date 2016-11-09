@@ -14,7 +14,14 @@ print("i should start my homework")
 print("start with homework 2 part C")
 print("use the string matching from homework1")
 
-f = open('hw3bshw3.html', 'w')
+f = open('hw3bshw3.html', 'r+')
+f2 = open('hw3.html', "w")
 for line in f:
 	if line.find('student')!= -1:
-		line.replace('student', 'AMAZING student')
+		f2.write(line.replace('student', 'AMAZING student'))
+	if line.find('iframe') != -1:
+		
+		f2.write(line.replace('https://www.youtube.com/embed/mimp_3gquc4?feature=oembed', 'Screen\ Shot\ 2016-10-04\ at\ 11.35.13\ PM.png'))
+	else:
+		f2.write(line)
+
