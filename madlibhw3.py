@@ -22,6 +22,10 @@ import random
 
 from nltk import word_tokenize,sent_tokenize
 
+
+tokens0= text2
+print(tokens0)
+
 tokens = text2[:150]
 print(tokens)
 tagged_tokens = nltk.pos_tag(tokens) # gives us a tagged list of tuples
@@ -37,7 +41,6 @@ def spaced(word):
 		return " " + word
 
 final_words = []
-
 
 for (word, tag) in tagged_tokens:
 	if tag not in substitution_probabilities or random.random() > substitution_probabilities[tag]:
