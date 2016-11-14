@@ -23,8 +23,9 @@ import random
 from nltk import word_tokenize,sent_tokenize
 
 
-tokens0= text2
-print(tokens0)
+tokens_original_text= text2
+for elm in tokens_original_text:
+	print (elm, end = " ")
 
 tokens = text2[:150]
 print(tokens)
