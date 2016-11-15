@@ -23,12 +23,11 @@ import random
 from nltk import word_tokenize,sent_tokenize
 
 
-tokens_original_text= text2
-for elm in tokens_original_text:
-	print (elm, end = " ")
+tokens_original_text = text2[:150]
+for token in tokens_original_text:
+	print(token, end=" ")
 
 tokens = text2[:150]
-print(tokens)
 tagged_tokens = nltk.pos_tag(tokens) # gives us a tagged list of tuples
 
 

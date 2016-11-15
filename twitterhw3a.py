@@ -27,7 +27,6 @@ def main():
   tweet = "Hello, SI 206 CLASS! #UMSI-206 #Proj3"
   status = api.update_with_media("picofme.png", status=tweet) 
 
-  # Yes, tweet is called 'status' rather confusing
 
 if __name__ == "__main__":
   main()
